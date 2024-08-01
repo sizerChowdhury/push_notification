@@ -1,5 +1,5 @@
-import 'package:notification/data/data_source/push_notification_data_source.dart';
-import 'package:notification/domain/repository/send_push_notification_repo.dart';
+import 'package:notification/features/push_notification/data/data_source/push_notification_data_source.dart';
+import 'package:notification/features/push_notification/domain/repository/send_push_notification_repo.dart';
 
 class PushNotificationRepoImp implements SendPushNotificationRepo {
   final PushNotificationDataSource _pushNotificationDataSource;
@@ -12,7 +12,7 @@ class PushNotificationRepoImp implements SendPushNotificationRepo {
   }
 
   @override
-  Future<String?> getDeviceToken() async{
+  Future<String?> getDeviceToken() async {
     return await _pushNotificationDataSource.getDeviceToken();
   }
 

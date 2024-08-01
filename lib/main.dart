@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:notification/presentation/screen/home_screen.dart';
-
 import 'config/service_locator/service_locator.dart';
 import 'config/services/firebase_service.dart';
-import 'domain/use_case/send_push_notification_use_case.dart';
+import 'features/push_notification/domain/use_case/send_push_notification_use_case.dart';
+import 'features/push_notification/presentation/screen/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

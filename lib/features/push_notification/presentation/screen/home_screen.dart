@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:notification/domain/use_case/send_push_notification_use_case.dart';
-
+import 'package:notification/features/push_notification/domain/use_case/send_push_notification_use_case.dart';
 
 class HomeScreen extends StatefulWidget {
   final SendPushNotificationUseCase _sendPushNotificationUseCase;
@@ -18,10 +17,9 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     widget._sendPushNotificationUseCase.requestNotificationPermission();
     widget._sendPushNotificationUseCase.setupInteractMessage();
-    widget._sendPushNotificationUseCase.getDeviceToken().then((token){
+    widget._sendPushNotificationUseCase.getDeviceToken().then((token) {
       print(token);
     });
-
   }
 
   @override

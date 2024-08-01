@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:notification/firebase_options.dart';
+import 'package:notification/config/firebase/firebase_options.dart';
 
 class FirebaseService {
   static Future<void> initializeFirebase() async {

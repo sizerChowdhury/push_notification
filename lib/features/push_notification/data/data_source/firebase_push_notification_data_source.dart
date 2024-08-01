@@ -4,7 +4,7 @@ import 'package:app_settings/app_settings.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:notification/data/data_source/push_notification_data_source.dart';
+import 'package:notification/features/push_notification/data/data_source/push_notification_data_source.dart';
 
 class FirebasePushNotificationDataSource extends PushNotificationDataSource {
   FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
